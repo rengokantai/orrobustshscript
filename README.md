@@ -38,3 +38,32 @@ ls -l
 find  ... -ls
 ```
 (create a new process per file)
+
+######ignore case
+```
+find / -iname pattern
+```
+######size=0
+```
+find / -print0
+```
+######empty files
+```
+find / -empty
+```
+
+
+
+### Finding And Processing Files - Demo
+```
+find | LC_ALL=C sort
+```
+######find files not belong to user
+```
+find / ! -user $USER
+```
+
+######best result
+```
+find . -name 'fun*' -print0 | xargs -0 grep fun
+```
