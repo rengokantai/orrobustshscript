@@ -1,5 +1,49 @@
 # orrobustshscript
+## Shell Language Basics
+### Variables And Simple Output
+```
+a= "a   b"
+echo "$a"
+```
+######printf
+```
+printf "one is %d two is %g" 1 2.4
+```
+###### %s and %b
+```
+printf "%s %b" "1\t2" "1\t2"
+```
+will print
+```
+1\t2 1 2
+```
+### Accessing Script Arguments
+prefer a for loop to while + shift. shifting cannot be undone  
 
+### Quoting And Execution Tracing
+####04:27
+```
+sh -x file.sh a b '1 2 3'
+```
+
+### Redirection And Special Files Part - 1
+```
+od -c file.txt
+```
+
+### Redirection And Special Files Part - 2
+'EOF' will print literal string.  
+```
+cat << 'EOF'
+xxxx
+EOF
+```
+EOF will not.
+```
+cat << EOF
+xxxx
+EOF
+```
 ## Working With Files
 ###1 Working With Files And Directories
 ```
