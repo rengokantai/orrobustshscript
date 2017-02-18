@@ -44,6 +44,87 @@ cat << EOF
 xxxx
 EOF
 ```
+
+
+
+### Command Types; Command And Directory Searching
+use
+```
+type -p
+```
+is useful for knowing the full path to a program  
+
+
+## Simple Things To Do With Text
+### Simple Text Processing Utilities
+
+```
+expand   //tab->space
+unexpand  //space->tab
+```
+
+
+
+
+
+
+
+
+
+
+## Looping
+### Working With Loops: Break, Continue, And Shift
+test a user is log in
+```
+#! /bin/sh
+while true
+do
+  if who | grep "$user" > /dev/null
+  then
+    break
+  fi
+  sleep 5
+done
+
+echo "$user is lggged on"
+exit 0
+```
+
+
+
+test a user is log out
+```
+#! /bin/sh
+while true
+do
+  if who | grep "$user" > /dev/null
+  then
+    sleep 5
+    continue
+  else
+    break
+  fi
+done
+
+echo "$user is lggged out"
+exit 0
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Working With Files
 ###1 Working With Files And Directories
 ```
