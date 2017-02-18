@@ -74,7 +74,7 @@ unexpand  //space->tab
 
 ## Looping
 ### Working With Loops: Break, Continue, And Shift
-test a user is log in
+######test a user is log in
 ```
 #! /bin/sh
 while true
@@ -92,7 +92,7 @@ exit 0
 
 
 
-test a user is log out
+######test a user is log out
 ```
 #! /bin/sh
 while true
@@ -110,6 +110,9 @@ echo "$user is lggged out"
 exit 0
 ```
 
+
+### Select Loops
+prompt = PS3
 
 
 
